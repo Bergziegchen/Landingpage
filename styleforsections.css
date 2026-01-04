@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* 2. Sektions-Styling mit Snap-Effekt */
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.content-section {
+    height: 100dvh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    
+    /* Der gewünschte Abstand von 20% von oben */
+    
+}
+
+/* Farbenzuweisung */
+#Kaiser { background-color: var(--accent-color); color: var(--text-light); }
+#Musik { background-color: var(--hover-color); color: var(--text-light); }
+#Landjugend { background-color: var(--sign-color); color: var(--text-light); }
+
+/* Grundlayout */
+
+
+.content-section {
+    padding: 4rem 1.5rem;
+    background-color: #ffffff;
+}
+
+.content-section.alt {
+    background-color: #f0f2f4;
+}
+
+/* Grid */
+.content-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+    padding-top: 15vh;
+}
+
+/* Text */
+.text h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.text p {
+    font-size: 1.05rem;
+}
+
+/* Bilder */
+.image img {
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .text h2 {
+        font-size: 1.6rem;
+    }
+}
