@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landingpage</title>
+    <link rel="stylesheet" href="stylefornavbar.css">
+    <link rel="stylesheet" href="styleforkontakt.css">
+</head>
+<body>
+    
+<div class="page-transition-overlay"></div>
+
+<div class="overlay" aria-hidden="true"></div>
+
+<header>
+    <nav aria-label="Hauptnavigation" class="is-pre-opened" >
+     <div class="navline">
+        <button class="menu-button" aria-label="Menü öffen" aria-expanded="false" aria-controls="nav-content">       
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+          
+            </div>
+            <div class="button-sign"><h2>Menu</h2></div>
+        </button>
+      
+        
+        <div class="sign">
+            <h2>Nick Struß</h2>
+            <img src="" alt="">
+        </div>
+        
+     </div>
+     
+        <div class="content" id="nav-content" inert>
+           <div class="menu-card">
+            <ul>
+                <li><h2>Navigation</h2></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="#Impressum">Impressum</a></li>
+                
+            </ul>
+           </div>
+           <div class="menu-card">
+            <ul>
+                <li><h2>Über mich</h2></li>
+                <li><a href="#kontaktformular">Kontaktformular</a></li>
+            </ul>
+           </div>
+           <div class="menu-card">
+            <section class="slider">
+            <div class="list">
+
+                <div class="item active">
+                    <div class="image" style=" --url: url('img/image4.jpeg')"></div>
+                    <div class="text"><h2>Willkommen auf meiner Webseite!</h2></div>
+                </div>
+ 
+                <div class="item">
+                    <div class="image" style=" --url: url('img/image2.jpeg')"></div>
+                    <div class="text"><h2>Willkommen auf meiner Webseite!</h2></div>
+                </div>
+               
+                <div class="item">
+                    <div class="image" style=" --url: url('img/image5.jpeg')"></div>
+                    <div class="text"><h2>Willkommen auf meiner Webseite!</h2></div>
+                </div>
+
+
+            </div>
+
+ 
+         
+
+        </section>
+           </div>
+        </div>
+        
+        
+    </nav>
+</header>
+
+
+
+
+    <main>
+
+ <!-- Textfeld mit Kontaktformular  -->
+
+   <div class="kontaktformular-wrapper">
+       <div id="kontaktformular">
+        
+    <form name="kontaktformular" action="kontaktform.php" method="post">
+       
+        <h2>Hier kannst du mir eine Mail schreiben</h2>
+        
+        <label for="absender">Mail-Adresse:</label>
+        <input type="text" name="absender" id="absender" value="" size="20" maxlength="50"/>
+        
+        <label for="betreff">Betreff:</label>
+        <input type="text" name="betreff" id="betreff" value="" size="20" maxlength="50"/>
+        
+        <label for="inhalt">Ihre Nachricht:</label>
+        <textarea name="inhalt" id="inhalt" rows="8" cols="40"></textarea>
+        
+        <input type="submit" value="Absenden"/>
+    </form>
+    </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

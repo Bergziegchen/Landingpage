@@ -1,0 +1,93 @@
+.kontaktformular-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img/image6.jpeg');
+    background-size: cover;
+}
+
+
+/* Container für das Formular */
+#kontaktformular {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Überschrift */
+#kontaktformular h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Label für Eingabefelder */
+#kontaktformular label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Eingabefelder und Textarea */
+#kontaktformular input[type="text"], #kontaktformular textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+/* Eingabefelder bei Focus */
+#kontaktformular input[type="text"]:focus, #kontaktformular textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+
+/* Absenden-Button */
+#kontaktformular input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Hover-Effekt für den Absenden-Button */
+#kontaktformular input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling für kleine Abstände */
+#kontaktformular p {
+    margin: 10px 0;
+}
+
+@media (max-width:1000px) {
+
+  .textfeld3 {
+
+    display: none;
+  }
+  #kontaktformular{
+    width: 80%;
+  }
+
+  
+}
